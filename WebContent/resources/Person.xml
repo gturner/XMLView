@@ -1,0 +1,39 @@
+<webpage>
+	<item name="kind" label="Type" type="TextField" readonly="readonly" value="Party" optionType="single" />
+	<item name="kindType" label="Party Type" readonly="readonly" value="person" type="TextField" optionType="single" />
+	<item name="andsUpload" label="Upload to Other Sites?:" type="ComboBox" optionType="reference" referenceValue="http://anu.edu.au/upload/ands" referenceLiteral="false">
+		<option value="info:fedora/fedora-system:def/model#Active" label="Yes" />
+		<option value="info:fedora/fedora-system:def/model#Deleted" label="No" />
+	</item>
+	<item name="title" label="Name Title" type="TextField" optionType="single" tooltip="e.g. Dr, Mr, Ms" />
+	<item name="givenName" label="Given Name(s):" type="TextField" optionType="single" />
+	<item name="lastName" label="Surname:" type="TextField" optionType="single" />
+	<item name="suffix" label="Name Suffix:" type="TextField" optionType="single" />
+	<item name="alternateName" label="Alternate Name(s)" type="Table" optionType="table">
+		<column name="altTitle" label="Title" type="TextField" />
+		<column name="altGiven" label="Given Name" type="TextField" />
+		<column name="altLastName" label="Surname" type="TextField" />
+		<column name="altSuffix" label="Suffix" type="TextField" />
+	</item>
+	<item name="abbreviatedName" label="Abbreviated Name(s)" type="Table" optionType="table">
+		<column name="abbrTitle" label="Title" type="TextField" />
+		<column name="abbrGiven" label="Given Name" type="TextField" />
+		<column name="abbrLastName" label="Surname" type="TextField" />
+		<column name="abbrSuffix" label="Suffix" type="TextField" />
+	</item>
+	<item name="uid" label="User ID:" type="TextField" optionType="single" />
+	<item name="nlaIdentifier" label="NLA Identifier" type="TextField" optionType="single" />
+	<item name="briefDesc" label="Brief Description:" type="TextArea" optionType="single" />
+	<item name="fullDesc" label="Full Description:" type="TextArea" optionType="single" />
+	<item name="emailAddress" label="Email Address:" type="TextFieldMulti" optionType="multiple" />
+	<item name="phoneNumber" label="Phone Number" type="TextFieldMulti" optionType="multiple" />
+	<item name="faxNumber" label="Fax Number" type="TextFieldMulti" optionType="multiple" />
+	<item name="postalAddress" label="Postal Address:" type="TextArea" optionType="single" />
+	<item name="websiteURL" label="Website:" type="TextField" optionType="single" />
+	<item name="forsubject" label="ANZSRC-FOR Subject" type="TextFieldMulti" optionType="multiple" />
+	<item name="locsubject" label="Other Subject" type="TextFieldMulti" optionType="multiple" />
+	<item name="relatedObject" label="Related Objects:" type="Table" optionType="table">
+		<column name="objKey" label="Key" type="TextField" />
+		<column name="objRelation" label="Relation" type="TextField" />
+	</item>
+</webpage>

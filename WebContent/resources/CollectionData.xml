@@ -1,0 +1,8 @@
+<webpage>
+	<item name="kind" label="Type:" type="TextField" readonly="readonly" optionType="single" value="Dataset"/>
+	<item name="dsPid" label="Dataset Id" type="TextField" optionType="reference" referenceValue="HasMetadata" />
+	<item name="accessRights" label="Access Rights:" type="TextArea" optionType="single" />
+	<item name="license" label="License:" type="TextArea" optionType="single" />
+	<item name="rights" label="Rights:" type="TextArea" optionType="single" />
+	<item name="file" label="File to Upload:" type="FileUploadMulti" optionType="multiple"/>
+</webpage>

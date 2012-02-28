@@ -1,0 +1,35 @@
+<webpage>
+	<item name="kind" label="Type:" type="TextField" readonly="readonly" value="Activity" optionType="single" />
+	<item name="kindType" label="Activity Type:" type="ComboBox" optionType="single">
+		<option value="project" label="Project" />
+		<option value="program" label="Program" />
+		<option value="course" label="Course" />
+		<option value="award" label="Award" />
+		<option value="event" label="Event" />
+	</item>
+	<item name="andsUpload" label="Upload to Other Sites?:" type="ComboBox" optionType="reference" referenceValue="http://anu.edu.au/upload/ands" referenceLiteral="false">
+		<option value="info:fedora/fedora-system:def/model#Active" label="Yes" />
+		<option value="info:fedora/fedora-system:def/model#Deleted" label="No" />
+	</item>
+	<item name="name" label="Activity Name:" type="TextField" class="required" tooltip="The name of the dataset" optionType="single" />
+	<item name="abbrName" label="Abbreviated Name:" type="TextField" optionType="single" />
+	<item name="altName" label="Alternate Name:" type="TextField" optionType="single" />
+	<item name="arcIdentifier" label="ARC Grant Number:" type="TextField" optionType="single" />
+	<item name="briefDesc" label="Brief Description:" type="TextArea" optionType="single" />
+	<item name="fullDesc" label="Full Description:" type="TextArea" optionType="single" />
+	<item name="emailAddress" label="Email Address of Contact(s):" type="TextFieldMulti" class="email" optionType="multiple" />
+	<item name="phoneNumber" label="Phone Numbers of Contact(s)" type="TextFieldMulti" optionType="multiple" />
+	<item name="postalAddress" label="Postal Address:" type="TextArea" optionType="single" />
+	<item name="websiteURL" label="Activity Website" type="TextField" tooltip="The website of the dataset if it exists" optionType="single" />
+	<item name="forsubject" label="ANZSRC-FOR Subject" type="TextFieldMulti" optionType="multiple" />
+	<item name="locsubject" label="Other Subject" type="TextFieldMulti" optionType="multiple" />
+	<item name="publication" label="Publications:" type="Table" optionType="table">
+		<column name="pubtype" label="Type" type="TextField" />
+		<column name="pubvalue" label="Value" type="TextField" />
+		<column name="pubtitle" label="Title" type="TextField"  />
+	</item>
+	<item name="relatedObject" label="Related Objects:" type="Table" optionType="table">
+		<column name="objKey" label="Key" type="TextField" />
+		<column name="objRelation" label="Relation" type="TextField" />
+	</item>
+</webpage>

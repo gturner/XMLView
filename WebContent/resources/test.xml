@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webpage>
+	<item name="projName" label="Project Name:" type="TextField" class="required" tooltip="The name of the project" optionType="single" />
+	<item name="projOwner" label="Project Owner:" type="TextField" class="required" tooltip="The owner/manager of the project" optionType="single" />
+	<item name="projDesc" label="Project Description:" type="TextArea" class="required" tooltip="The description of the project" optionType="single" />
+	<item name="projWebsite" label="Project Website:" type="TextField" tooltip="The website of the project" optionType="single" />
+	<item name="projResources" label="Project Resources:" type="Checkbox" optionType="multiple">
+		<option label="Paper" value="paper" />
+		<option label="Computers" value="computer" />
+	</item>
+	<item name="projPeople" label="Project People:" type="Table" optionType="table">
+		<column name="uid" label="User ID" type="TextField" />
+		<column name="firstname" label="First Name" type="TextField" />
+		<column name="lastname" label="Last Name" type="TextField" />
+	</item>
+	<item name="contactPerson" label="Contact Person:" type="TextField" class="required" tooltip="The contact person for the project" optionType="single" />
+</webpage>

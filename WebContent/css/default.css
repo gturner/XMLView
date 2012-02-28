@@ -1,0 +1,10 @@
+input[type="text"] {
+	width: 500px;
+}
+textarea {
+	width: 500px;
+	height: 100px;
+}
+td{
+	vertical-align: top;
+}

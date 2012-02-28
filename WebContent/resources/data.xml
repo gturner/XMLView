@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<item name="projName">Testing</item>
+	<item name="projOwner">Test Person</item>
+	<item name="projDesc">Some description of the project</item>
+	<item name="projWebsite">http://www.google.com.au</item>
+</data>

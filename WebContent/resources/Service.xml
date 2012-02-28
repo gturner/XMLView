@@ -1,0 +1,36 @@
+<webpage>
+	<item name="kind" label="Type" type="TextField" readonly="readonly" value="Service" optionType="single" />
+	<item name="serviceType" label="Service Type" type="ComboBox" optionType="single">
+		<option value="create" label="Create" />
+		<option value="generate" label="Generate" />
+		<option value="annotate" label="Annotate" />
+		<option value="report" label="Report" />
+		<option value="transform" label="Transform" />
+		<option value="assemble" label="Assemble" />
+	</item>
+	<item name="andsUpload" label="Upload to Other Sites?:" type="ComboBox" optionType="reference" referenceValue="http://anu.edu.au/upload/ands" referenceLiteral="false">
+		<option value="info:fedora/fedora-system:def/model#Active" label="Yes" />
+		<option value="info:fedora/fedora-system:def/model#Deleted" label="No" />
+	</item>
+	<item name="name" label="Service Name:" type="TextField" class="required" tooltip="The name of the dataset" optionType="single" />
+	<item name="abbrName" label="Abbreviated Name:" type="TextField" optionType="single" />
+	<item name="altName" label="Alternate Name:" type="TextField" optionType="single" />
+	<item name="briefDesc" label="Brief Description:" type="TextArea" optionType="single" />
+	<item name="fullDesc" label="Full Description:" type="TextArea" optionType="single" />
+	<item name="emailAddress" label="Email Address of Contact(s):" type="TextFieldMulti" class="email" optionType="multiple" />
+	<item name="phoneNumber" label="Phone Numbers of Contact(s)" type="TextFieldMulti" optionType="multiple" />
+	<item name="postalAddress" label="Postal Address:" type="TextArea" optionType="single" />
+	<item name="deliveryMethod" label="Delivery Method" type="ComboBox" optionType="single">
+		<option value="offline" label="Offline" />
+		<option value="software" label="Software" />
+		<option value="webservice" label="Web Service" />
+		<option value="workflow" label="Workflow" />
+	</item>
+	<item name="websiteURL" label="Access URL" type="TextField" tooltip="The url to access the service" optionType="single" />
+	<item name="relatedURL" label="Service Website" type="TextField" tooltip="The website about the service if it exists" optionType="single" />
+	<item name="accessURL" label="Access Policy Website" type="TextField" tooltip="The website of the access policy if it exists" optionType="single" />
+	<item name="relatedObject" label="Related Objects:" type="Table" optionType="table">
+		<column name="objKey" label="Key" type="TextField" />
+		<column name="objRelation" label="Relation" type="TextField" />
+	</item>
+</webpage>

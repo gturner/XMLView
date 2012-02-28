@@ -1,0 +1,45 @@
+<webpage>
+	<item name="kind" label="Type" type="TextField" readonly="readonly" value="Collection" optionType="single" />
+	<item name="kindType" label="Collection Type" type="ComboBox" optionType="single">
+		<option value="catalogueOrIndex" label="Catalogue" />
+		<option value="collection" label="Collection" />
+		<option value="registry" label="Registry" />
+		<option value="repository" label="Repository" />
+		<option value="dataset" label="Dataset" />
+	</item>
+	<item name="andsUpload" label="Upload to Other Sites?:" type="ComboBox" optionType="reference" referenceValue="http://anu.edu.au/upload/ands" referenceLiteral="false">
+		<option value="info:fedora/fedora-system:def/model#Active" label="Yes" />
+		<option value="info:fedora/fedora-system:def/model#Deleted" label="No" />
+	</item>
+	<item name="name" label="Dataset Name:" type="TextField" class="required" tooltip="The name of the dataset" optionType="single" />
+	<item name="abbrName" label="Abbreviated Dataset Name:" type="TextField" optionType="single" />
+	<item name="altName" label="Alternate Name:" type="TextField" optionType="single" />
+	<item name="briefDesc" label="Brief Description:" type="TextArea" optionType="single" />
+	<item name="fullDesc" label="Full Description:" type="TextArea" optionType="single" />
+	<item name="significance" label="Significance Statement:" type="TextArea" optionType="single" />
+	<item name="emailAddress" label="Email Address of Contact:" type="TextFieldMulti" class="email" optionType="multiple" />
+	<item name="postalAddres" label="Postal Address:" type="TextArea" optionType="single" />
+	<item name="websiteURL" label="Dataset Website" type="TextField" tooltip="The website of the dataset if it exists" optionType="single" />
+	<item name="forsubject" label="ANZSRC-FOR Subject" type="TextFieldMulti" optionType="multiple" />
+	<item name="locsubject" label="Other Subject" type="TextFieldMulti" optionType="multiple" />
+	<item name="coverageDates" label="Dates of Collection (yyyy-MM-dd hh:mm:ss.SSS)" type="Table" optionType="table" tooltip="The timeframe the collection os based upon (e.g. if it is about the 17th century put in 1600)">
+		<column name="covDtmFrom" label="From" class="date" type="TextField" />
+		<column name="covDtmTo" label="To" class="date" type="TextField" />
+	</item>
+	<item name="coverageArea" label="Area of Collection" type="Table" optionType="table">
+		<column name="covAreaType" label="Type" type="TextField" />
+		<column name="covAreaValue" label="Value" type="TextField" />
+	</item>
+	<item name="publication" label="Publications:" type="Table" optionType="table">
+		<column name="pubtype" label="Type" type="TextField" />
+		<column name="pubvalue" label="Value" type="TextField" />
+		<column name="pubtitle" label="Title" type="TextField"  />
+	</item>
+	<item name="relatedObject" label="Related Objects:" type="Table" optionType="table">
+		<column name="objKey" label="Key" type="TextField" />
+		<column name="objRelation" label="Relation" type="TextField" />
+	</item>
+	<item name="accessRights" label="Access Rights:" type="TextArea" optionType="single" />
+	<item name="licence" label="Licence:" type="TextArea" optionType="single" />
+	<item name="rights" label="Rights:" type="TextArea" optionType="single" />
+</webpage>
